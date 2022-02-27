@@ -20,5 +20,9 @@ public class MainSLL {
 
         sll.searchNode(6);
         sll.searchNode(15);
+
+        sll.deletionOfNode(1);
+
+        sll.traverseSinglyLinkedList();
     }
 }
