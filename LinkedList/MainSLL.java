@@ -17,5 +17,8 @@ public class MainSLL {
         System.out.println(sll.tail.value);
 
         sll.traverseSinglyLinkedList();
+
+        sll.searchNode(6);
+        sll.searchNode(15);
     }
 }

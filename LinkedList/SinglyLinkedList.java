@@ -50,7 +50,7 @@ public class SinglyLinkedList {
 
     public void traverseSinglyLinkedList() {
         if (head == null) {
-            System.out.println("SLL does not exists");
+            System.out.println("SLL does not exist");
         } else {
             NodeSLL tempNode = head;
 
@@ -66,5 +66,21 @@ public class SinglyLinkedList {
         }
 
         System.out.println("\n");
+    }
+
+    public boolean searchNode(int nodeValue) {
+        if (head != null){
+            NodeSLL tempNode = head;
+            for (int i = 0; i < size; i++) {
+                if (tempNode.value == nodeValue) {
+                    System.out.print("Found the node at location: " + i + "\n");
+                    return true;
+                }
+                tempNode = tempNode.next;
+            } 
+        }
+        System.out.print("Node not found"); 
+        return false;
+        
     }
 }
