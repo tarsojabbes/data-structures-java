@@ -15,5 +15,7 @@ public class MainSLL {
 
         sll.insertInLinkedList(4, 3);
         System.out.println(sll.tail.value);
+
+        sll.traverseSinglyLinkedList();
     }
 }
