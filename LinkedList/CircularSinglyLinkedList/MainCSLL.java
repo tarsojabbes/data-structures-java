@@ -15,5 +15,15 @@ public class MainCSLL {
 
         csll.searchCSLL(10);
         csll.searchCSLL(30);
+
+        csll.insertCSLL(12, 4);
+        csll.insertCSLL(15, 5);
+
+        csll.deleteNode(0);
+        csll.deleteNode(4);
+
+        csll.traverseCSLL();
+
+        csll.deleteCSLL();
     }
 }
