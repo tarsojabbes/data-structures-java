@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class MainSLL {
     public static void main(String[] args) {
