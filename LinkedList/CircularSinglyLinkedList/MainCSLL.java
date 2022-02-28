@@ -12,5 +12,8 @@ public class MainCSLL {
         csll.insertCSLL(11, 2);
 
         csll.traverseCSLL();
+
+        csll.searchCSLL(10);
+        csll.searchCSLL(30);
     }
 }
