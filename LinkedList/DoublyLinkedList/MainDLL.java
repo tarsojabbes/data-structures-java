@@ -15,5 +15,8 @@ public class MainDLL {
 
      dll.reverseTraversalDLL();
 
+     dll.searchDLL(10);
+     dll.searchDLL(15);
+
  }   
 }

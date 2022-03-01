@@ -85,4 +85,21 @@ public class DoublyLinkedList {
         }
         System.out.print("\n");
     }
+
+    public boolean searchDLL(int nodeValue) {
+        if (head == null) {
+            System.out.println("DLL does not exist");
+        } else {
+            NodeDLL tempNode = head;
+            for (int i = 0; i < size; i++){
+                if (tempNode.value == nodeValue){
+                    System.out.println("The node is found at location: " + i);
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.print("Node not found");
+        return false;
+    }
 }
