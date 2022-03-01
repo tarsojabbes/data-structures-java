@@ -18,5 +18,10 @@ public class MainDLL {
      dll.searchDLL(10);
      dll.searchDLL(15);
 
+     dll.deleteNodeDLL(2);
+     dll.traverseDLL();
+
+     dll.deleteDLL();
+
  }   
 }
