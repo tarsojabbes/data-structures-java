@@ -15,5 +15,11 @@ public class MainCDLL {
 
         cdll.searchCDLL(3);
         cdll.searchCDLL(10);
+
+        cdll.deleteNodeCDLL(3);
+        cdll.traverseCDLL();
+
+        cdll.deleteCDLL();
+        cdll.traverseCDLL();
     }
 }
