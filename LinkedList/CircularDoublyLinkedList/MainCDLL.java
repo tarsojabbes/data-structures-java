@@ -12,5 +12,8 @@ public class MainCDLL {
 
         cdll.traverseCDLL();
         cdll.reverseTraversalCDLL();
+
+        cdll.searchCDLL(3);
+        cdll.searchCDLL(10);
     }
 }
