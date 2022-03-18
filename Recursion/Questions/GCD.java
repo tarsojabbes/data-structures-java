@@ -2,7 +2,7 @@ package Recursion.Questions;
 
 public class GCD {
     public static void main(String[] args) {
-        Integer result = gcd(18, 48);
+        Integer result = gcd(18,48);
         System.out.println(result);
     }
 
