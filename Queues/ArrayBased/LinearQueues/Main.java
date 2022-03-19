@@ -13,5 +13,13 @@ public class Main {
         queue.enqueue(6);
         queue.enqueue(7);
         queue.enqueue(8);
+
+        System.out.println(queue.dequeue());
+        queue.dequeue();
+
+        System.out.println(queue.peek());
+
+        queue.delete();
+
     }
 }

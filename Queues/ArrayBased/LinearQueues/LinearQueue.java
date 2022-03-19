@@ -38,6 +38,34 @@ public class LinearQueue {
         }
     }
 
+    public int dequeue(){
+        if (isEmpty()){
+            System.out.println("Empty queue");
+            return -1;
+        } else {
+            int result = arr[beginningfOfQueue];
+            beginningfOfQueue++;
+            if (beginningfOfQueue > topOfQueue) {
+                beginningfOfQueue = -1;
+                topOfQueue = -1;
+            }
+            return result;
+        }
+    }
+
+    public int peek(){
+        if (!isEmpty()){
+            return arr[beginningfOfQueue];
+        } else {
+            System.out.println("Empty queue");
+            return -1;
+        }
+    }
+
+    public void delete(){
+        arr = null;
+    }
+
 
 
 
