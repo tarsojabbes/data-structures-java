@@ -11,9 +11,19 @@ public class BinaryTreeLL {
         if (node == null) {
             return;
         }
-        System.out.println(node.value + " ");
+        System.out.print(node.value + " ");
         preOrder(node.left);
         preOrder(node.right);
+    }
+
+    public void inOrder(BinaryNode node) {
+        if (node == null) {
+            return;
+        }
+        inOrder(node.left);
+        System.out.print(node.value + " ");
+        inOrder(node.right);
+
     }
 
 
