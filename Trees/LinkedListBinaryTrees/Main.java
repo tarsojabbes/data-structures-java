@@ -41,6 +41,9 @@ public class Main {
 
         System.out.println("\nPostOrder Traversal");
         binaryTree.postOrder(binaryTree.root);
+
+        System.out.println("\nLevelOrder Traversal");
+        binaryTree.levelOrder();
         
     }
 }
