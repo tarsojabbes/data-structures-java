@@ -39,6 +39,8 @@ public class Main {
         System.out.println("\nInOrder Traversal");
         binaryTree.inOrder(binaryTree.root);
 
+        System.out.println("\nPostOrder Traversal");
+        binaryTree.postOrder(binaryTree.root);
         
     }
 }
