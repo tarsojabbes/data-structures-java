@@ -47,6 +47,14 @@ public class Main {
 
         binaryTree.search("N5");
         binaryTree.search("N13");
+
+        BinaryTreeLL secondBT = new BinaryTreeLL();
+        secondBT.insert("N01");
+        secondBT.insert("N02");
+        secondBT.insert("N03");
+        secondBT.insert("N04");
+        secondBT.insert("N05");
+        secondBT.levelOrder();
         
     }
 }
