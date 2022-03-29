@@ -44,6 +44,9 @@ public class Main {
 
         System.out.println("\nLevelOrder Traversal");
         binaryTree.levelOrder();
+
+        binaryTree.search("N5");
+        binaryTree.search("N13");
         
     }
 }
