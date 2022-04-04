@@ -12,5 +12,13 @@ public class Main {
         bst.insert(6);
         bst.insert(25);
         bst.insert(1);
+
+        bst.preOrder(bst.root);
+        System.out.print("\n");
+        bst.inOrder(bst.root);
+        System.out.print("\n");
+        bst.postOrder(bst.root);
+        System.out.print("\n");
+        bst.levelOrder();
     }
 }
