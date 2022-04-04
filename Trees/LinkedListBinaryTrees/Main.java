@@ -55,6 +55,19 @@ public class Main {
         secondBT.insert("N04");
         secondBT.insert("N05");
         secondBT.levelOrder();
+        System.out.println(secondBT.getDeepestNode().value);
+
+        secondBT.deleteDeepestNode();
+        secondBT.deleteDeepestNode();
+        secondBT.levelOrder();
+        System.out.println(secondBT.getDeepestNode().value);
+
+        secondBT.deleteNode("N02");
+        secondBT.deleteNode("N05");
+        secondBT.levelOrder();
+        System.out.println(secondBT.getDeepestNode().value);
+
+        secondBT.deleteBinaryTree();
         
     }
 }
