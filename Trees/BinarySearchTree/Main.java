@@ -20,5 +20,15 @@ public class Main {
         bst.postOrder(bst.root);
         System.out.print("\n");
         bst.levelOrder();
+
+        bst.search(bst.root, 10);
+        bst.search(bst.root, 100);
+
+        bst.deleteNode(bst.root, 1);
+        bst.deleteNode(bst.root, 6);
+        bst.deleteNode(bst.root, 100);
+        bst.levelOrder();
+
+        bst.deleteBST();
     }
 }
