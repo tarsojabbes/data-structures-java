@@ -5,4 +5,8 @@ public class BinaryNode {
     public int height;
     public BinaryNode left;
     public BinaryNode right;
+
+    public BinaryNode() {
+        this.height = 0;
+    }
 }
