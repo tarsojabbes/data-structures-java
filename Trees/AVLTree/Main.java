@@ -12,5 +12,7 @@ public class Main {
 
         avl.delete(5);
         avl.levelOrder();
+
+        avl.deleteAVL();
     }
 }

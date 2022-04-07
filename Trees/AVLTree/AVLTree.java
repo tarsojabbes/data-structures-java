@@ -205,4 +205,8 @@ public class AVLTree {
         root = deleteNode(root, value);
     }
 
+    public void deleteAVL() {
+        root = null;
+    }
+
 }
