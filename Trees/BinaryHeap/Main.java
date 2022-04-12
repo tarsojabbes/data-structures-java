@@ -13,5 +13,9 @@ public class Main {
         bh.insert(15, "Min");
         bh.insert(1, "Min");
         bh.levelOrder();
+
+        System.out.println(bh.extractHead("Min"));
+        bh.levelOrder();
+
     }
 }

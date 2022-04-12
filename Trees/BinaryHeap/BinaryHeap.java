@@ -62,5 +62,72 @@ public class BinaryHeap {
         heapfyBottomToTop(size, heapType);
     }
 
+
+    public void heapfyTopToBottom(int index, String heapType) {
+        int left = index*2;
+        int right = index*2 + 1;
+        int swapChild = 0;
+
+        if (size < left) {
+            return;
+        }
+
+        if (heapType == "Max") {
+            if (size == left) {
+                if (arr[index] < arr[left]) {
+                    int temp = arr[index];
+                    arr[index] = arr[left];
+                    arr[left] = temp;
+                }
+                return;
+            } else {
+                if (arr[left] > arr[right]) {
+                    swapChild = left;
+                } else {
+                    swapChild = right;
+                }
+                if (arr[index] < swapChild) {
+                    int temp = arr[index];
+                    arr[index] = arr[swapChild];
+                    arr[swapChild] = temp;
+                }
+            }
+        } else if (heapType == "Min") {
+            if (size == left) {
+                if (arr[index] > arr[left]) {
+                    int temp = arr[index];
+                    arr[index] = arr[left];
+                    arr[left] = temp;
+                }
+                return;
+            } else {
+                if (arr[left] < arr[right]) {
+                    swapChild = left;
+                } else {
+                    swapChild = right;
+                }
+                if (arr[index] > swapChild) {
+                    int temp = arr[index];
+                    arr[index] = arr[swapChild];
+                    arr[swapChild] = temp;
+                }
+            }
+        }
+        heapfyTopToBottom(swapChild, heapType);
+
+    }
+
+    public Integer extractHead(String heapType) {
+        if (isEmpty()) {
+            return null;
+        } else {
+            int extractedValue = arr[1];
+            arr[1] = arr[size];
+            size--;
+            heapfyTopToBottom(1, heapType);
+            return extractedValue;
+        }
+    }
+
     
 }
