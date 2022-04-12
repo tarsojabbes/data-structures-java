@@ -17,5 +17,7 @@ public class Main {
         System.out.println(bh.extractHead("Min"));
         bh.levelOrder();
 
+        bh.deleteBinaryHeap();
+
     }
 }

@@ -129,5 +129,9 @@ public class BinaryHeap {
         }
     }
 
+    public void deleteBinaryHeap() {
+        arr = null;
+    }
+
     
 }
